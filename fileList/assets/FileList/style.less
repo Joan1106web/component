@@ -1,0 +1,19 @@
+@import '../FileBlock/style.less';
+
+@fileList:file-list;
+
+.@{fileList}-contain{
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
+    min-width: 320px;
+    overflow: auto;
+    & > .@{fileList}-col{
+        width: 33.33333333%;
+        float: left;
+        display: flex;
+        justify-content: center;
+        padding: 10px;
+        box-sizing: border-box;
+    }
+}

@@ -1,0 +1,11 @@
+{
+  "version": "0.0.1",
+  "name": "@joan/query-panel",
+  "builds": [
+    {
+      "src": "package.json",
+      "use": "@now/static-build",
+      "config": { "distDir": ".doc" }
+    }
+  ]
+}

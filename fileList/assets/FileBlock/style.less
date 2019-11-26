@@ -1,0 +1,32 @@
+@fileBlock:file-list;
+
+.@{fileBlock}-block-contain{
+    width: 100%;
+    padding: 0 10px;
+    box-sizing: border-box;
+    & > .@{fileBlock}-block-content{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        & > .@{fileBlock}-block-img-block{
+            width: 100%;
+            text-align: center;
+            & > img{
+                width: 66px;
+                cursor: pointer;
+                transition: all 1s;
+            }
+            & > img:hover{
+                transform: scale(1.2);
+            }
+        }
+        & > p{
+            width: 100%;
+            text-align: center;
+            overflow: hidden;
+            white-space: nowrap;
+            text-overflow: ellipsis;
+        }
+    }
+}
